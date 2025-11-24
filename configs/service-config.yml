@@ -1,0 +1,29 @@
+# ==============================
+#   CONFIGURACIÓN DEL PROYECTO
+# ==============================
+
+project:
+  name: "mi-proyecto-so"
+  environment: "local"
+
+# ==============================
+#        CONFIG WEBUI
+# ==============================
+
+webui:
+  backend_url: "http://ollama:11434"
+  port: 3000
+  request_timeout: 120
+  max_history: 10
+
+# ==============================
+#        CONFIG OLLAMA
+# ==============================
+
+ollama:
+  default_model: "llama3.1"
+  models_dir: "/root/.ollama"
+  max_seq_len: 4096
+  temperature: 0.1
+  gpu_enabled: false
+
