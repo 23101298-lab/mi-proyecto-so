@@ -1,3 +1,4 @@
+````sql
 [ HOST (WSL2) ]
 - Kernel Linux
 - Docker Engine
@@ -31,4 +32,7 @@ El usuario accede desde el navegador a http://localhost:3000. La interfaz envía
 
 Opcionalmente, la arquitectura puede incluir un contenedor de base de datos, también gestionado por el docker-compose.yml, con un volumen para persistencia. Sin embargo, no es requerido para la ejecución básica del proyecto.
 
+
 En conjunto, la arquitectura muestra cómo varios servicios aislados, cada uno en su propio contenedor, pueden trabajar coordinadamente mediante redes y volúmenes definidos por Docker.
+
+````
