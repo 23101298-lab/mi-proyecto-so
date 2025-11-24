@@ -1,0 +1,9 @@
+## 4. Reflexión sobre Sistemas Operativos
+
+El proyecto desarrollado me permitió aplicar directamente varios conceptos fundamentales de Sistemas Operativos, especialmente aquellos relacionados con procesos, manejo de recursos y aislamiento. Al trabajar con Docker, pude observar cómo cada contenedor no es una máquina independiente, sino un proceso del sistema host que está aislado mediante mecanismos del kernel como namespaces y cgroups. Esto refuerza lo visto en clase sobre cómo el SO crea y controla procesos, asignándoles identificadores, espacio de direcciones y recursos propios.
+
+En términos de uso de recursos, el servicio que más demanda generó fue Ollama, ya que cargar y ejecutar un modelo de lenguaje implica un consumo elevado de CPU y memoria RAM. Esto me permitió entender de manera práctica cómo un sistema operativo distribuye y limita recursos entre procesos, y cómo una carga de trabajo intensiva puede afectar el rendimiento global. En contraste, el servicio WebUI utilizó menos recursos, actuando principalmente como intermediario mediante solicitudes HTTP, lo que refleja un uso más ligero de CPU, red y almacenamiento.
+
+Uno de los aprendizajes más valiosos fue comprender el aislamiento que proveen los contenedores. Gracias a los namespaces, cada contenedor tiene su propio entorno, red virtual, árbol de procesos y sistema de archivos, aunque compartan el mismo kernel. Esto permite que los servicios funcionen de forma independiente: si uno falla o se reinicia, no afecta directamente al resto. Además, el uso de volúmenes me ayudó a diferenciar entre datos efímeros y datos persistentes, entendiendo cómo el almacenamiento puede ser separado del ciclo de vida de los procesos.
+
+En conjunto, este proyecto mostró cómo los conceptos teóricos del curso se aplican en herramientas modernas y cómo el sistema operativo actúa como base esencial para la orquestación y aislamiento de aplicaciones contemporáneas.
