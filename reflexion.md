@@ -1,4 +1,4 @@
-## 4. Reflexión sobre Sistemas Operativos
+## Reflexión sobre Sistemas Operativos
 
 El proyecto desarrollado me permitió aplicar directamente varios conceptos fundamentales de Sistemas Operativos, especialmente aquellos relacionados con procesos, manejo de recursos y aislamiento. Al trabajar con Docker, pude observar cómo cada contenedor no es una máquina independiente, sino un proceso del sistema host que está aislado mediante mecanismos del kernel como namespaces y cgroups. Esto refuerza lo visto en clase sobre cómo el SO crea y controla procesos, asignándoles identificadores, espacio de direcciones y recursos propios.
 
