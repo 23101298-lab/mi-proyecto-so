@@ -1,5 +1,7 @@
 # Mi Propio ChatGPT Local
 ##DEEPESAN
+
+
 **Autores:** Yubert Diaz Leon  , salva christ , gabriela paco
 
 
