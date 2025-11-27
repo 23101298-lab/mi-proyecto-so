@@ -86,7 +86,6 @@ services:
     networks:
       - chatnet
 
-    # 👇 AQUÍ VAN LOS LÍMITES DE RECURSOS
     deploy:
       resources:
         limits:
