@@ -1,19 +1,13 @@
+```mermaid
 flowchart LR
-    User[Usuario / Navegador<br/>http://localhost:3000] --> WebUI[Contenedor `webui`<br/>Open-WebUI<br/>Puerto 3000:8080<br/>Red: chatnet]
+    User["Usuario / Navegador\nhttp://localhost:3000"] 
+        --> WebUI["Contenedor `webui`\nOpen-WebUI\nPuerto 3000:8080\nRed: chatnet"]
 
-    WebUI -->|HTTP :11434| Ollama[Contenedor `ollama`<br/>Servidor de modelos LLM<br/>Puerto 11434:11434<br/>GPU: NVIDIA (runtime)]
+    WebUI -->|HTTP :11434| Ollama["Contenedor `ollama`\nServidor de modelos LLM\nPuerto 11434:11434\nGPU: NVIDIA (runtime)"]
 
-    Ollama --> VolOllama[(Volumen<br/>ollama-data)]
-    WebUI --> VolWebui[(Volumen<br/>webui-data)]
-    Ollama --> GPU[(GPU NVIDIA<br/>VRAM)]
+    Ollama --> VolOllama["Volumen\nollama-data"]
+    WebUI --> VolWebui["Volumen\nwebui-data"]
+    Ollama --> GPU["GPU NVIDIA\nVRAM"]
 
-    %% Estilos opcionales
-    classDef cont fill:#1f6feb,stroke:#0d1117,color:#ffffff;
-    classDef vol fill:#f0f6ff,stroke:#1f6feb,color:#000;
-    classDef hw fill:#fef2c0,stroke:#9e6b00,color:#000;
-
-    class User,WebUI,Ollama cont;
-    class VolOllama,VolWebui vol;
-    class GPU hw;
 
 
