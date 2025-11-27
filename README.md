@@ -66,7 +66,9 @@ con **cd /mnt/c/Users/yuber**
 
 
  ``` bash
- services:
+version: "3.9"
+
+services:
 
   ollama:
     image: ollama/ollama:latest
@@ -83,6 +85,16 @@ con **cd /mnt/c/Users/yuber**
       - ollama-data:/root/.ollama
     networks:
       - chatnet
+
+    # 👇 AQUÍ VAN LOS LÍMITES DE RECURSOS
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"    # máximo ~2 cores lógicos
+          memory: "6G"   # máximo 6 GB de RAM
+        reservations:
+          cpus: "1.0"    # reserva mínima de 1 core
+          memory: "4G"   # reserva mínima de 4 GB
 
   webui:
     image: ghcr.io/open-webui/open-webui:latest
@@ -106,6 +118,7 @@ volumes:
 networks:
   chatnet:
     driver: bridge
+
 
 
 ```
