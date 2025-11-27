@@ -1,10 +1,11 @@
 # Mi Propio ChatGPT Local
---
-##DEEPESAN
 
+**Nombre del equipo:** DEEP-ESAN  
 
-**Autores:** Yubert Diaz Leon  , salva christ , gabriela paco
-
+**Integrantes:**
+- Yubert Samuel Díaz León – [23101298@ue.edu.pe](mailto:23101298@ue.edu.pe)
+- Christ Andy Salva Grijalba – [25200180@ue.edu.pe](mailto:25200180@ue.edu.pe)
+- Gabriela Paco – [22101601@ue.edu.pe](mailto:22101601@ue.edu.pe)
 
 **Curso:** Sistemas Operativos (Ciclo 2025-2)  
 **Institución:** ESAN Universidad  
@@ -256,6 +257,12 @@ http://localhost:3000/
 
 
 ![alt text](https://raw.githubusercontent.com/23101298-lab/mi-proyecto-so/refs/heads/main/demo/Captura%20de%20pantalla%202025-11-23%20230926.png)
+
+
+----
+## Video demo
+
+[Ver demo en Google Drive](https://drive.google.com/file/d/1yiWgDkIbC6_pc2lrRQPfzaeefQUz8eTr/view?usp=sharing)
 
 
 ## Créditos y recursos utilizados
