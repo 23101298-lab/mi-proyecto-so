@@ -170,7 +170,7 @@ En tu navegador:
 
  
 
-3.Luego escribimos para levantar el proeycto **./scripts/start.sh** 
+3.Luego escribimos para levantar el proyecto **./scripts/start.sh** 
 esto 
 
  arranca Ollama
